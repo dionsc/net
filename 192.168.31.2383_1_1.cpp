@@ -1,1 +1,0 @@
-#include<bits/stdc++.h>using namespace std;int n , k;int a[1000005] = { 0 };void solve(){	int lb = 1, ub = n+1;	while(ub - lb > 1)	{		int mid = (lb + ub) / 2;		if(a[mid] >= k) ub = mid; 		else lb = mid;	}	printf("%d\n",ub);}int main(){	cin >> n >> k;	for ( int i = 1; i <= n; i++) cin >> a[i];	solve();	return 0;}
