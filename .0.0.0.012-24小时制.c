@@ -1,0 +1,1 @@
+#include<stdio.h> int main(){	int x1,x2,x3;	scanf("%d:%d",&x1,&x2);	char p;	if(x1>12)	{		p='P';		x3=x1%12;	 } 	 else if(x1==12)	 {	 	x3=12;	 }	 else{	 	p='A';	 	x3=x1;	 }	 printf("%d:%d %cM",x3,x2,p);	 return 0;}
