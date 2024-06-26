@@ -1,1 +1,0 @@
-#include<bits/stdc++.h>#define MM 600 using namespace std;int n,W;int w[MM],v[MM];int d[1000];int main(){	scanf("%d %d",&n,&W);	int i=0,j=0;	for(i=0;i<n;i++)	scanf("%d%d",&w[i],&v[i]);	for(i=0;i<n;i++)	for(j=W;j>=w[i];j--)	{		d[j]=max(d[j],d[j-w[i]]+v[i]);	}	printf("%d",d[W]);	}
